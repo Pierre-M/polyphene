@@ -2,6 +2,7 @@ import "./core/theme/style.css";
 
 import { setupLayouts } from "virtual:generated-layouts";
 import { createApp } from "vue";
+import { VueQueryPlugin } from "vue-query";
 import { createRouter, createWebHistory } from "vue-router";
 
 import generatedRoutes from "~pages";
@@ -15,4 +16,4 @@ const router = createRouter({
   routes,
 });
 
-createApp(App).use(router).mount("#app");
+createApp(App).use(router).use(VueQueryPlugin).mount("#app");
