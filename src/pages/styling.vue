@@ -18,6 +18,7 @@
 
 <script lang="ts" setup>
 const johnCellClasses =
-  "flex justify-center items-center bg-primary text-secondary";
-const doeCellClasses = "flex items-end justify-end bg-secondary text-primary";
+  "flex justify-center items-center bg-primary text-secondary hover:justify-start hover:items-start hover:bg-secondary/50";
+const doeCellClasses =
+  "flex items-end justify-end bg-secondary text-primary hover:justify-center hover:items-center hover:bg-secondary/50";
 </script>
